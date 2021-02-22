@@ -1,0 +1,14 @@
+
+<main class="container-fluid main-container d-flex flex-wrap justify-content-center">
+    <div class="card mr-3 mb-2 bg-white rounded" *ngFor="let rank of rankings">
+        <div class="card-horizontal">
+            <div class="img-square-wrapper">
+                <!-- <img class="card-image" [src]="character.image" alt="Card image cap">-->
+            </div>
+            <div class="card-body">
+                <h4 class="card-title mb-3">{{ rank.first_name }} {{rank.last_name}}</h4>
+                <p class="card-text mb-1"> Text</p>
+            </div>
+        </div>
+    </div>
+</main>
