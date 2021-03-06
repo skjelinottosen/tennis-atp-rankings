@@ -1,4 +1,4 @@
-# TennisAtpRankings
+# Tennis ATP Rankings
 
 Tennis Live Data application written in Angular 
 * Using Tennis Live Data API (https://rapidapi.com/sportcontentapi/api/tennis-live-data).
