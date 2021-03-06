@@ -1,14 +1,25 @@
-
-<main class="container-fluid main-container d-flex flex-wrap justify-content-center">
-    <div class="card mr-3 mb-2 bg-white rounded" *ngFor="let rank of rankings">
-        <div class="card-horizontal">
-            <div class="img-square-wrapper">
-                <!-- <img class="card-image" [src]="character.image" alt="Card image cap">-->
-            </div>
-            <div class="card-body">
-                <h4 class="card-title mb-3">{{ rank.first_name }} {{rank.last_name}}</h4>
-                <p class="card-text mb-1"> Text</p>
-            </div>
-        </div>
-    </div>
+<main class="container-fluid main-container d-flex  flex-wrap  w-100">
+    <img class="atp-logo ml-5" src="../../../assets/images/atp-logo.png">
+    <div class="table-wrapper-scroll-y scrollbar d-flex  w-100">
+        <table class="table table-dark table-striped text-white w-50 ml-5 font-weight-bold text-center" >
+            <thead>
+                <tr>
+                    <th>Ranking</th>
+                    <th>Move</th>
+                    <th>Country</th>
+                    <th>Player</th>
+                    <th>Points</th>  
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let rank of rankings">
+                    <th>{{ rank.ranking }}</th>
+                    <td>{{ rank.movement }}</td>
+                    <td>{{ rank.first_name }} {{rank.last_name}}</td>
+                    <td>{{ rank.country }}</td>
+                    <td>{{ rank.ranking_points }} points</td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
 </main>
