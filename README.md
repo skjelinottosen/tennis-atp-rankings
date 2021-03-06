@@ -1,5 +1,13 @@
 # TennisAtpRankings
 
+Quiz application written in Angular 
+* Using Tennis Live Data API (https://rapidapi.com/sportcontentapi/api/tennis-live-data).
+* Using bootstrap 4.
+
+### Application shot
+![](/src/assets/images/application-shot.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
 ## Development server
